@@ -1,0 +1,32 @@
+@import "reset";
+@import "mixin";
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo",
+  "Malgun Gothic", sans-serif;
+  color: #111;
+  background-color: var(--whitegray-70);
+  height: 100vh;
+
+  #root {
+    min-height: 100%;
+
+    *::-webkit-scrollbar {
+      background-color: transparent;
+      width: 5px;
+    }
+
+    main {
+      overflow: hidden;
+
+      &::-webkit-scrollbar {
+        //width: 5px;
+        display: none;
+      }
+    }
+  }
+}
