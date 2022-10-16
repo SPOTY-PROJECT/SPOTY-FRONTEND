@@ -1,0 +1,17 @@
+.Input{
+  display: grid;
+  gap: 5px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  .label{
+  }
+
+  .input{
+    padding: 19px;
+    border-radius: 10px;
+    border: 1px solid #515151;
+    background-color: var(--white);
+  }
+}
