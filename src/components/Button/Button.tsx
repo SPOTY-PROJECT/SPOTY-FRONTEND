@@ -3,25 +3,18 @@ import classNames from "classnames/bind";
 
 import styles from "./Button.module.scss";
 
-type HeaderProps = {
-    title: string;
-    color?: "yellow" | "normal";
-    onClose?: React.MouseEventHandler;
-    onReturn?: React.MouseEventHandler;
+type ButtonProps = {
+  content: string;
+  onClick: any;
 };
 
 const cx = classNames.bind(styles);
 
-function Button({ title, color = "normal" }: HeaderProps) {
+function Button({ content, onClick }: ButtonProps) {
   return (
-    <header className={cx("PopupHeader", color === "yellow" ? "color" : "")}>
-      <div className={cx("title")}>
-        {title}
-        <div className={cx("test")}>
-          test
-        </div>
-      </div>
-    </header>
+    <div className={cx("Button")} onClick={onClick}>
+      {content}
+    </div>
   );
 }
 
