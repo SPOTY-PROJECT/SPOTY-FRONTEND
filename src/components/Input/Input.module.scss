@@ -5,6 +5,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+
+  .wrapper{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
   .label{
   }
 
@@ -13,5 +19,25 @@
     border-radius: 10px;
     border: 1px solid #515151;
     background-color: var(--white);
+
+    &.warning{
+      border-color: #FF3636;
+    }
+  }
+
+  .content{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+
+    &.pass{
+      color: #06BE34;
+    }
+    &.warning{
+      color: #FF3636;
+    }
   }
 }
