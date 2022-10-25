@@ -30,7 +30,8 @@ export const DefaultInput = Template.bind({});
 DefaultInput.args = {
   label: "이메일",
   placeHolder: "이메일을 입력해 주십시오",
-  type: "normal"
+  type: "normal",
+  hide: false
 };
 
 export const ToolTipInput = Template.bind({});
@@ -39,5 +40,6 @@ ToolTipInput.args = {
   label: "비밀번호",
   placeHolder: "비밀번호를 입력해주세요.",
   toolTipContent: "영문 대문자, 숫자, 특수문자를 포함한 8자 이상의 비밀번호를 사용하세요.",
-  type: "normal"
+  type: "normal",
+  hide: true
 };

@@ -1,27 +1,39 @@
 .Input{
   display: grid;
   gap: 5px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
 
-  .wrapper{
+  .label-wrapper{
     display: flex;
     gap: 4px;
     align-items: center;
   }
-  .label{
-  }
 
-  .input{
-    padding: 19px;
-    border-radius: 10px;
-    border: 1px solid #515151;
-    background-color: var(--white);
+  .input-wrapper{
+    width: 100%;
+    position: relative;
+    display: grid;
+    .input{
+      padding: 20.5px;
+      border-radius: 10px;
+      border: 1px solid #515151;
+      background-color: var(--white);
 
-    &.warning{
-      border-color: #FF3636;
+      &.warning{
+        border-color: #FF3636;
+      }
+    }
+    .hide{
+      position: absolute;
+      cursor: pointer;
+      top: 20.5px;
+      right: 38px;
+
+      &.click{
+        opacity: 0.3;
+      }
     }
   }
 
