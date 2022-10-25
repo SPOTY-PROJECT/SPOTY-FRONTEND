@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof PassIcon> = (args) => (
   <PassIcon/>
 );
 
-export const DefaultInput = Template.bind({});
+export const DefaultPassIcon = Template.bind({});
 
-DefaultInput.args = {
+DefaultPassIcon.args = {
 };
