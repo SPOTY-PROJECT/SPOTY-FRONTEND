@@ -1,0 +1,24 @@
+.Modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #303030;
+
+  .children{
+    position: relative;
+    width: 441px;
+    background-color: var(--white);
+    border-radius: 50px;
+
+    .icon{
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      cursor: pointer;
+    }
+  }
+}
