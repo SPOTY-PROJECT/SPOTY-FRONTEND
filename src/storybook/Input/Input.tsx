@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import classNames from "classnames/bind";
 
 import { ToolTip } from "../ToolTip/ToolTip";
-import { PassIcon } from "../Icon/PassIcon/PassIcon";
-import { WaringIcon } from "../Icon/WaringIcon/WaringIcon";
+import { PassIcon } from "../icon/PassIcon/PassIcon";
+import { WaringIcon } from "../icon/WaringIcon/WaringIcon";
 
 import styles from "./Input.module.scss";
 
@@ -13,12 +13,14 @@ type InputProps = {
   toolTipContent?: string;
   type: "normal" | "pass" | "warning",
   content?: string,
-  hide: boolean
+  hide: boolean,
+  onChange?: any
+  onBlur?: any
 };
 
 const cx = classNames.bind(styles);
 
-function Input({ label, placeHolder, toolTipContent, type, content, hide }: InputProps) {
+function Input({ label, placeHolder, toolTipContent, type, content, hide, onChange, onBlur }: InputProps) {
   const [show, setShow] = useState(hide);
   return (
     <div className={cx("Input")}>
@@ -27,7 +29,7 @@ function Input({ label, placeHolder, toolTipContent, type, content, hide }: Inpu
         {toolTipContent && <ToolTip content={toolTipContent}/>}
       </div>
       <div className={cx("input-wrapper")}>
-        <input className={cx("input", type)} placeholder={placeHolder} type={show ? "password" : "text"}/>
+        <input className={cx("input", type)} placeholder={placeHolder} type={show ? "password" : "text"} onChange={onChange} onBlur={onBlur}/>
         {
           hide &&
           <svg className={cx("hide", !show && "click")} onClick={() => setShow(!show)} width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,9 +1,15 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { CheckEmail } from "./components/Register/CheckEmail/CheckEmail";
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={"/"} element={<CheckEmail/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

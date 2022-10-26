@@ -1,0 +1,10 @@
+.CheckEmail{
+  width: 456px;
+  display: grid;
+  justify-items: center;
+
+  .email{
+    display: flex;
+    gap: 7px;
+  }
+}
