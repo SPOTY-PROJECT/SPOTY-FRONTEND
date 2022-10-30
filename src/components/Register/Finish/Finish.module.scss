@@ -1,0 +1,28 @@
+.Finish{
+  display: grid;
+  justify-items: center;
+
+  .notice{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--gray-100);
+    padding: 43px 0 7px;
+  }
+
+  .detail{
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--gray-100);
+  }
+
+  .data-wrapper{
+    padding: 39px 0;
+    font-size: 12px;
+  }
+
+  .button-wrapper{
+    display: grid;
+    grid-template-columns: 182px 182px;
+    gap: 5px
+  }
+}
