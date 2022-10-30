@@ -1,44 +1,8 @@
 :root {
-  // review
-
-  --real-black: #000;
-  --real-black-rgb: 0, 0, 0;
-
-  --gray-100: var(--real-black);
-  --gray-100-rgb: var(--real-black-rgb);
-
-  --gray-50: #9a9a9a;
-  --gray-50-rgb: 154, 154, 154;
-
-  --gray-20: #cdcdcd;
-  --gray-20-rgb: 205, 205, 205;
-
-  --gray-10: #e8e8e8;
-  --gray-10-rgb: 232, 232, 232;
-
-  --bluegray-10: #f7f9fb;
-  --bluegray-10-rgb: 247, 249, 251;
-
-
-  --whitegray-30 : #fcfcfc;
-  --whitegray-30-rgb : 252,252,252;
-
-  --whitegray-70: #f7f7f7;
-  --whitegray-70-rgb: 247, 247, 247;
-
-  --whitegray-90: #f9f9f9;
-  --whitegray-90-rgb: 249, 249, 249;
-
-
-  --blue-60: #93c8fb;
-  --blue-60-rgb: 147, 200, 251;
-
-  --blue-100: #4ba4f8;
-  --blue-100-rgb: 75, 164, 248;
-
-  --red-100: #eb0f36;
-  --red-100-rgb: 235, 15, 54;
-
-  --white: #fff;
-  --white-rgb: 255, 255, 255;
+  --black-100: #000;
+  --white: #FFF;
+  --gray-100: #515151;
+  --blue-100: #0000FF;
+  --green-100: #06BE34;
+  --red-100: #FF3636;
 }
