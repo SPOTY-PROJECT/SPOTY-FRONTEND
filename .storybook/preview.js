@@ -1,3 +1,5 @@
+import "../src/style/common.scss"
+
 export const parameters = {
   backgrounds: {
     default: "light",

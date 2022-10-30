@@ -1,0 +1,27 @@
+.ToolTip{
+  position: relative;
+  display: flex;
+  gap: 4px;
+
+  .icon{
+    cursor: pointer;
+
+    &:hover~.content{
+      display: inherit;
+    }
+  }
+
+  .content{
+    white-space: nowrap;
+    position: absolute;
+    display: none;
+    padding: 8px 6px;
+    border-radius: 5px;
+    background: rgba(82, 78, 78, 0.5);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    left: 13px;
+    bottom: 0;
+  }
+}
