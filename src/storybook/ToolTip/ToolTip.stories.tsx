@@ -25,5 +25,11 @@ const Template: ComponentStory<typeof ToolTip> = (args) => (
 export const DefaultInput = Template.bind({});
 
 DefaultInput.args = {
-  content: "영문 대문자, 숫자, 특수문자를 포함한 8자 이상의 비밀번호를 사용하세요."
+  content: <p>영문 대문자, 숫자, 특수문자를 포함한 8자 이상의 비밀번호를 사용하세요.<br/>영문 대문자, 숫자, 특수문자를 포함한 8자 이상의 비밀번호를 사용하세요.</p>
+};
+
+export const Default = Template.bind({});
+
+Default.args = {
+  content: <p>영문 대문자, 숫자, 특수문자를 포함한 8자 이상의 비밀번호를 사용하세요</p>
 };

@@ -4,7 +4,7 @@ import classNames from "classnames/bind";
 import styles from "./ToolTip.module.scss";
 
 type ToolTipProps = {
-  content: string
+  content: React.ReactNode
 };
 
 const cx = classNames.bind(styles);
