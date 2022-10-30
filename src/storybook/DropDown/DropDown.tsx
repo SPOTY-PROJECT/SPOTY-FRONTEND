@@ -25,8 +25,8 @@ function DropDown({ title, option, placeHolder, onChange, toolTipContent }: Drop
         {toolTipContent && <ToolTip content={toolTipContent}/>}
       </div>
       <div className={cx("input-wrapper")}>
-        <input className={cx("input")} placeholder={placeHolder} value={value && value} onChange={onChange}/>
-        <svg className={cx("icon")} onClick={() => setShow(!show)} width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <input className={cx("input")} placeholder={placeHolder} value={value && value} onChange={onChange} onClick={() => setShow(!show)} readOnly={true}/>
+        <svg className={cx("icon")} width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1L4.96036 6L9 1" stroke="black" strokeLinecap="round"/>
         </svg>
         {
