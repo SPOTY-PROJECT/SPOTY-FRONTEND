@@ -3,7 +3,6 @@
   gap: 5px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
   width: 100%;
 
   .label-wrapper{
@@ -17,10 +16,11 @@
     position: relative;
     display: grid;
     .input{
-      padding: 20.5px;
+      padding: 21px;
       border-radius: 10px;
       border: 1px solid #515151;
       background-color: var(--white);
+      min-width: 60px;
 
       &.warning{
         border-color: #FF3636;
@@ -29,28 +29,28 @@
     .hide{
       position: absolute;
       cursor: pointer;
-      top: 20.5px;
+      top: 21px;
       right: 38px;
 
       &.click{
         opacity: 0.3;
       }
     }
-  }
+    .content{
+      font-weight: 400;
+      font-size: 12px;
+      display: flex;
+      gap: 2px;
+      align-items: center;
+      position: absolute;
+      bottom: -20px;
 
-  .content{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    gap: 2px;
-    align-items: center;
-
-    &.pass{
-      color: #06BE34;
-    }
-    &.warning{
-      color: #FF3636;
+      &.pass{
+        color: #06BE34;
+      }
+      &.warning{
+        color: #FF3636;
+      }
     }
   }
 }
