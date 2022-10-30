@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import classNames from "classnames/bind";
 
-import { CloseIcon } from "../Icon/CloseIcon/CloseIcon";
+import { CloseIcon } from "../icon/CloseIcon/CloseIcon";
 
 import styles from "./Modal.module.scss";
 
