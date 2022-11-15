@@ -13,14 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={"/"} element={<Register/>}>
-          <Route path={""} element={<BaseData/>}/>
-          <Route path={"check"} element={<CheckNumber/>}/>
-          <Route path={"extra"} element={<ExtraData/>}/>
-          <Route path={"finish"} element={<Finish/>}/>
-          <Route path={"find"} element={<FindPassword/>}/>
-          <Route path={"make"} element={<NewPassword/>}/>
-        </Route>
+
       </Routes>
     </BrowserRouter>
   );
