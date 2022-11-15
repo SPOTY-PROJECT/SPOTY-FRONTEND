@@ -1,0 +1,47 @@
+.RegisterFirst{
+  width: 456px;
+  text-align: center;
+  .PageName{
+    margin-top: 7px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .InputWrapper{
+    display: grid;
+    margin-top: 39px;
+    gap: 29px;
+    text-align: start;
+  }
+  .ButtonWrapper{
+    display: grid;
+    margin-top: 39px;
+    gap: 11px;
+    grid-template-columns: 114px 330px;
+    margin-bottom: 10px;
+  }
+  .Refer{
+    font-weight: 400;
+    font-size: 11px;
+    color: #AFAFAF;
+    text-align: start;
+  }
+  .Line{
+    margin-top: 39px;
+    display: grid;
+    grid-template-columns: 207px 19px 207px;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    .Linefont{
+      font-weight: 400;
+      font-size: 10px;
+    }
+  }
+  .OtherRegisterWrapper{
+    display: grid;
+    margin-top: 29px;
+    gap: 11px;
+  }
+}
