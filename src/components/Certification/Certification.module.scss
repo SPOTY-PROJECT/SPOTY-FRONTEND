@@ -1,0 +1,32 @@
+.Certification{
+  width: 456px;
+  text-align: center;
+  margin-top: 111px;
+  .PageName{
+    margin-top: 7px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .CertificationNum{
+    display: grid;
+    margin-top: 40px;
+    gap: 11px;
+    text-align: start;
+    grid-template-columns: 311px 136px;
+  }
+  .ButtonWrapper{
+    display: grid;
+    margin-top: 40px;
+    gap: 11px;
+    grid-template-columns: 116px 330px;
+    margin-bottom: 8px;
+  }
+  .Refer{
+    font-weight: 400;
+    font-size: 11px;
+    color: #AFAFAF;
+    text-align: start;
+  }
+}
