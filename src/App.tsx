@@ -4,6 +4,7 @@ import Register from "./pages/Register/Register";
 import RegisterFirst from "./components/Register/RegisterFirst";
 import Certification from "./components/Certification/Certification";
 import Information from "./components/InformationReg/Information";
+import Complete from "./components/RegComplete/Complete";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path={""} element={<RegisterFirst/>}/>
           <Route path={"certification"} element={<Certification/>}/>
           <Route path={"information"} element={<Information/>}/>
+          <Route path={"Complete"} element={<Complete/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
