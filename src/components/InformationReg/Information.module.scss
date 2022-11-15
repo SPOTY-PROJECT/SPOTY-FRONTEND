@@ -1,0 +1,45 @@
+.Information {
+  width: 456px;
+  text-align: center;
+  .PageName{
+    margin-top: 7px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .InformationWrapper{
+    display:grid;
+    gap: 29px;
+    text-align: start;
+    margin-top: 39px;
+    .BirthWrapper{
+      display: grid;
+      grid-template-columns: 185px 152px 152px;
+      .YearWrapper{
+        display: grid;
+        grid-template-columns: 119px auto;
+        align-items: center;
+        gap:7px;
+      }
+      .MonthWrapper{
+        display: grid;
+        grid-template-columns: 119px auto;
+        align-items: center;
+        gap:7px;
+      }
+      .DayWrapper{
+        display: grid;
+        grid-template-columns: 119px auto;
+        align-items: center;
+        gap:7px;
+      }
+    }
+    .Area{
+      display: grid;
+      gap: 11px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+}

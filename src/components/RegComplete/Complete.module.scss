@@ -1,0 +1,35 @@
+.Complete{
+  display:grid;
+  justify-items: center;
+  align-content: center;
+  .Ending{
+    font-weight: 600;
+    font-size: 20px;
+    color: #515151;
+    margin-top: 39px;
+  }
+  .CongraturationWord{
+    margin-top: 14px;
+    .Congraturation{
+      font-weight: 400;
+      font-size: 12px;
+      color: #515151;
+    }
+  }
+  .CheckInfo{
+    display: grid;
+    gap:15px;
+    margin-top: 55px;
+    .CheckInfoWord{
+      font-weight: 400;
+      font-size: 12px;
+      color: #515151;
+    }
+  }
+  .ButtonWrapper{
+    display: grid;
+    grid-template-columns: 176px 176px;
+    gap: 11px;
+    margin-top: 50px;
+  }
+}

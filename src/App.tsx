@@ -1,25 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import { BaseData } from "./components/Register/BaseData/BaseData";
-import { Register } from "./pages/Register/Register";
-import { ExtraData } from "./components/Register/ExtraData/ExtraData";
-import { CheckNumber } from "./components/Register/CheckNumber/CheckNumber";
-import { Finish } from "./components/Register/Finish/Finish";
-import { FindPassword } from "./components/Register/FindPassword/FindPassword";
-import { NewPassword } from "./components/Register/NewPassword/NewPassword";
+import Register from "./pages/Register/Register";
+import RegisterFirst from "./components/Register/RegisterFirst";
+import Certification from "./components/Certification/Certification";
+import Information from "./components/InformationReg/Information";
+import Complete from "./components/RegComplete/Complete";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path={"/"} element={<Register/>}>
-          <Route path={""} element={<BaseData/>}/>
-          <Route path={"check"} element={<CheckNumber/>}/>
-          <Route path={"extra"} element={<ExtraData/>}/>
-          <Route path={"finish"} element={<Finish/>}/>
-          <Route path={"find"} element={<FindPassword/>}/>
-          <Route path={"make"} element={<NewPassword/>}/>
+          <Route path={""} element={<RegisterFirst/>}/>
+          <Route path={"certification"} element={<Certification/>}/>
+          <Route path={"information"} element={<Information/>}/>
+          <Route path={"Complete"} element={<Complete/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
